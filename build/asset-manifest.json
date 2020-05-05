@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/abzTest/static/css/main.76c6c2b7.chunk.css",
+    "main.js": "/abzTest/static/js/main.d9238176.chunk.js",
+    "main.js.map": "/abzTest/static/js/main.d9238176.chunk.js.map",
+    "runtime-main.js": "/abzTest/static/js/runtime-main.200f44a2.js",
+    "runtime-main.js.map": "/abzTest/static/js/runtime-main.200f44a2.js.map",
+    "static/js/2.a4a75652.chunk.js": "/abzTest/static/js/2.a4a75652.chunk.js",
+    "static/js/2.a4a75652.chunk.js.map": "/abzTest/static/js/2.a4a75652.chunk.js.map",
+    "index.html": "/abzTest/index.html",
+    "precache-manifest.c51ce1101458a1425cbfd6cff783ce64.js": "/abzTest/precache-manifest.c51ce1101458a1425cbfd6cff783ce64.js",
+    "service-worker.js": "/abzTest/service-worker.js",
+    "static/css/main.76c6c2b7.chunk.css.map": "/abzTest/static/css/main.76c6c2b7.chunk.css.map",
+    "static/js/2.a4a75652.chunk.js.LICENSE.txt": "/abzTest/static/js/2.a4a75652.chunk.js.LICENSE.txt",
+    "static/media/reminder.module.sass": "/abzTest/static/media/banner-photo.f5443d74.jpg",
+    "static/media/logo.svg": "/abzTest/static/media/logo.146e2926.svg",
+    "static/media/man-laptop-v1.svg": "/abzTest/static/media/man-laptop-v1.3cdf7897.svg",
+    "static/media/menu-icon.svg": "/abzTest/static/media/menu-icon.6f6bef28.svg",
+    "static/media/photo-cover.svg": "/abzTest/static/media/photo-cover.3a41f082.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.200f44a2.js",
+    "static/js/2.a4a75652.chunk.js",
+    "static/css/main.76c6c2b7.chunk.css",
+    "static/js/main.d9238176.chunk.js"
+  ]
+}
