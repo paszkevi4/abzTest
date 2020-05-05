@@ -1,0 +1,91 @@
+$primaryColor: #ef5b4c
+
+//using grid-layout with the template from style guide
+.acqMain
+  display: grid
+  grid-template-columns: repeat(12, 1fr)
+  grid-gap: 0 30px
+  margin: 0 29px
+  padding: 120px 0 125px 0
+  h1
+    grid-column: 1/-1
+    font-size: 49px
+    margin-bottom: 50px
+    max-height: 50px
+.acqImg
+  grid-column: 1/6
+  margin: 25px
+  margin-right: 20px
+  img
+    width: 100%
+.acqContainer
+  grid-column: 6/-1
+  padding-right: 0px
+  text-align: justify
+  h2
+    max-height: 40px
+  p
+    font-size: 16px
+    margin-bottom: 23px
+    max-height: 150px
+  div
+    margin-top: 30px
+.acqButton
+  text-decoration: none
+  font-size: 16px
+  background: #fff
+  color: $primaryColor
+  width: 90px
+  text-align: left
+.acqButton:hover
+  color: darken($primaryColor, 15%)
+
+// media querie for tablet approach
+@media screen and (max-width: 864px)
+  .acqMain
+    padding: 85px 0 115px 0
+    h1
+      max-height: 50px
+      font-size: 39px
+      margin-bottom: 55px
+  .acqContainer
+    margin-left: -30px
+    h2
+      margin: 13px 0 17px
+    p
+      font-size: 16px !important
+      margin: 20px 0
+      max-height: 130px
+  .acqImg
+    margin: 15px 30px 0 0
+  .acqButton
+    font-size: 16.5px
+
+// media querie for mobile approach. Considering fact it has one column flex-layout can be used here
+@media screen and (max-width: 425px)
+  .acqMain
+    display: flex
+    flex-direction: column
+    justify-content: center
+    margin: 0 15px
+    padding: 60px 0 75px 0
+    h1
+      max-height: 50px
+      margin: 15px 0 35px
+  .acqImg
+    margin: 0px 21px
+  .acqContainer
+    margin: 0 auto
+    h2
+
+      text-align: center
+      margin: 28px 0 0
+    p
+      font-size: 15.5px !important
+      max-height: 140px
+      margin: 20px 0 24px
+  .acqButton
+    display: block
+    margin-top: 25px
+    width: 100%
+    text-align: center

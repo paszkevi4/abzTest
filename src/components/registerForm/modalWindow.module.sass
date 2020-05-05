@@ -1,0 +1,52 @@
+// styles for modal window
+
+// main container will hide and blur all the rest content
+.modal
+  display: block
+  position: fixed
+  width: 100vw
+  height: 100vh
+  left: 0
+  top: 0
+  z-index: 2
+  backdrop-filter: brightness(50%)
+
+// inner container is the modal itself
+.modalInner
+  z-index: 3
+  margin: calc( 50vh - 99px) auto
+  width: 396px
+  height: 188px
+  background: #fff
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  border: 0.5px solid #333
+  border-radius: 3px
+  div:first-child
+    display: flex
+    justify-content: space-between
+    h2
+      margin: 15px 17px
+  div:nth-child(2)
+    display: flex
+    padding: 15px
+    color: grey
+    border-top: 1px solid lightgrey
+    border-bottom: 1px solid lightgrey
+  div:last-child
+    display: flex
+    justify-content: flex-end
+    .modalButton
+      border: none
+      width: 80px
+      margin: 15px 15px
+      height: 38px
+      color: #fff
+      background: #ef5b4c
+      border-radius: 5px
+      -webkit-appearance: none
+.xButton
+  height: 12px
+  width: 12px
+  margin: 25px 20px 0

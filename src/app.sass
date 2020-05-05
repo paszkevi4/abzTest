@@ -1,0 +1,88 @@
+//declaring some vars needed later in styles and importing font
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap')
+$primaryColor: #ef5b4c
+$secondaryColor: #007bff
+$backgroundColor: #fff
+$secondaryBackgroundColor: #f9f9f3
+
+//common styles used in at least several components will be declared here
+.App
+  max-width: 1170px
+  margin: 0 auto
+  text-align: center
+  font-family: 'Open Sans'
+h1
+  font-size: 50px
+  line-height: 55px
+  font-weight: 400
+  overflow: hidden
+  text-overflow: ellipsis
+h2
+  font-size: 24px
+  line-height: 30px
+  font-weight: 400
+  overflow: hidden
+  text-overflow: ellipsis
+h5
+  font-size: 16px
+  line-height: 20px
+  font-weight: 400
+// overflow: hidden text-overflow: ellipsis to transform overflown text into dots
+p
+  font-size: 16px
+  line-height: 24px
+  margin-bottom: 0
+  font-weight: 400
+  overflow: hidden
+  text-overflow: ellipsis
+// overflow: hidden text-overflow: ellipsis to transform overflown text into dots
+a
+  color: #000
+  font-size: 14px
+  line-height: 24px
+  font-weight: 400
+  overflow: hidden
+  text-overflow: ellipsis
+input
+  font-size: 17px
+button
+  border: none
+  margin-top: 25px
+  width: 210px
+  height: 38px
+  color: #fff
+  cursor: pointer
+  background: $primaryColor
+  border-radius: 5px
+  font-size: 17px
+button:hover
+  background: darken($primaryColor, 15%)
+.menuIcon
+  display: none
+.footer
+  margin: 15px 0
+
+//common media queries 864w for tablet and 425w for phone approach
+@media screen and (max-width: 864px)
+  h1
+    font-size: 40px
+    line-height: 45px
+  h5
+    font-size: 12.5px
+  p
+    font-size: 16px
+  .menuIcon
+    display: block
+  .menu
+    display: none
+
+// media querie for mobile approach
+@media screen and (max-width: 425px)
+  h1
+    font-size: 30px !important
+    line-height: 34px
+  h5
+    font-size: 16px
+  p
+    font-size: 15.7px !important
+    line-height: 24px

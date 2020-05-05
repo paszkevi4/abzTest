@@ -1,0 +1,179 @@
+$secondaryColor: #007bff
+$backgroundColor: #fff
+
+//styles for registration page
+.registrationPage
+  grid-column: 1/-1
+  padding: 115px 0 165px
+  border-bottom: 1px solid lightgrey
+  position: relative
+  h1
+    margin-bottom: 0
+  p
+    display: inline-block
+    width: 470px
+    color: grey
+    margin-bottom: 5px
+    text-align: left
+    font-size: 16px
+    color: black
+.regAnchor
+  position: absolute
+  top: 10px
+.regSubtitle
+  text-align: center !important
+.form
+  width: 470px
+  margin: 0 auto
+.container
+  display: flex
+  flex-direction: column
+  label
+    text-align: left
+    font-size: 15px
+    margin: 20px 0 10px 0
+  h5
+    margin: 0
+    padding: 6px 3px
+    font-size: 12px
+    font-weight: 400
+    text-align: left
+.personalInfo
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  input
+    width: 450px
+    height: 35px
+    font-size: 15px
+    padding-left: 15px
+    outline: none
+    border-radius: 5px
+    border: 1px solid #ccc
+    &:focus
+      border: 1px solid lightblue
+      box-shadow: 0 0 5px lightblue
+.wantedPosition
+  display: flex
+  flex-direction: column
+  p
+    font-size: 15px
+    margin: 10px 0 10px
+  label
+    display: block
+    cursor: pointer
+    margin: 5px 0 5px
+
+//styles for custom radioButtons
+.radio
+  position: relative
+
+//default markers will be hidden
+.radio input
+  opacity: 0
+  margin-left: 10px
+
+//styles for custom unchecked button
+.checkmark
+  position: absolute
+  top: 4px
+  left: 0
+  height: 16px
+  width: 16px
+  background-color: $backgroundColor
+  border: 1px solid grey
+  box-sizing: border-box
+  border-radius: 50%
+.checkmark:after
+  content: ''
+  background-color: $backgroundColor
+  position: absolute
+  top: 5px
+  left: 5px
+  width: 6px
+  height: 6px
+  border-radius: 50%
+  background: white
+  display: none
+
+//styles for custom checked button
+input[type="radio"]:checked + .checkmark
+  background-color: $secondaryColor
+  border: none
+input[type="radio"]:checked + .checkmark:after
+  display: block
+
+//styles for custom fileInput
+.fileInputContainer
+  position: relative
+  overflow: hidden
+
+//default fileInput will be hidden
+.inputNotToShow
+  width: 0.1px
+  height: 0.1px
+  opacity: 0
+  overflow: hidden
+  position: absolute
+  z-index: -1
+
+//custom button for fileInput
+.fileInputBtn
+  position: absolute
+  right: 2px
+  padding: 0 15px
+  padding-top: 7px
+  margin: 0 !important
+  background: #f2f2f2
+  height: 30px
+  border: 1px solid #ccc
+  border-radius: 0 5px 5px 0
+
+.registrationButton
+  margin-top: 40px
+
+// media querie for tablet approach
+@media screen and (max-width: 864px)
+  .registrationPage
+    padding: 82px 0 120px 0
+  h1
+    margin-top: 27px
+
+// media querie for mobile approach
+@media screen and (max-width: 425px)
+  .registrationPage
+    padding: 50px 0 70px 0
+    p
+      width: 310px
+      padding-bottom: 0
+      margin-top: 20px
+      line-height: 22px
+  .form
+    width: 330px
+  .container
+    label
+      margin: 20px 0 10px 0
+    h5
+      padding: 0 0
+      font-size: 11px
+  .personalInfo
+    input
+      width: 315px
+      height: 33px
+      padding-left: 10px
+      margin-bottom: 5px
+  .fileInputBtn
+    height: 28px
+  .form
+    width: 300x
+    margin: 0 auto
+  .wantedPosition
+    margin: -2px
+    p
+      font-size: 15px !important
+    label
+      margin: 5px 0
+  .fileInput
+    width: 280px !important
+  .registrationButton
+    margin: 35px 0 10px

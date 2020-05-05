@@ -1,0 +1,87 @@
+//image set as a background in .reminderMain
+$cover: url(./../../assets/banner-photo.jpg)
+$primaryColor: #ef5b4c
+
+.reminderMain
+  display: grid
+  grid-template-columns: repeat(12, 1fr)
+  grid-gap: 0 30px
+  padding: 0 30px
+  height: 600px
+  background: $cover
+  background-repeat: no-repeat
+  background-size: cover
+.reminderTitle
+  text-transform: uppercase
+  margin: 37px 0 22px
+.reminderContainer
+  grid-column: 1/8
+  padding: 70px 20px 0 0
+  text-align: left
+  h1
+    color: #fff
+    font-size: 49px
+    max-height: 165px
+  p
+    color: #fff
+    margin: 0
+    padding: 0
+    max-height: 120px
+//paragraph for mobile approach. invisible by default
+.reminderParagraphMobile
+  display: none
+.reminderButton
+  border: none
+  margin-top: 35px
+  width: 210px
+  height: 38px
+  color: #fff
+  background: #ef5b4c
+  border-radius: 5px
+  -webkit-appearance: none
+.reminderButton:hover
+  background: darken($primaryColor, 15%)
+
+
+// media querie for tablet approach
+@media screen and (max-width: 864px)
+  .reminderMain
+    height: 500px
+    background-size: 134% auto
+  .reminderContainer
+    grid-column: 1/9
+    padding: 21px 0 25px
+    p
+      max-height: 150px
+  .reminderTitle
+    max-height: 160px
+    font-size: 39.5px !important
+    margin-right: 40px
+    margin-bottom: 25px
+
+// media querie for mobile approach
+@media screen and (max-width: 425px)
+  .reminderMain
+    display: flex
+    flex-direction: column
+    padding: 0
+    height: 400px
+    background-position: -170px 0
+    background-size: auto 400px
+  .reminderContainer
+    text-align: center
+    p
+      font-size: 16px
+      line-height: 23px
+      max-height: 80px
+  .reminderTitle
+    font-size: 30px !important
+    margin: 50px 24px 15px
+  .reminderParagraph
+    display: none
+  .reminderParagraphMobile
+    display: block
+    padding: 5px 15px !important
+  .reminderButton
+    margin: 20px 0 0
+

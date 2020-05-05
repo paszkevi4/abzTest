@@ -1,0 +1,104 @@
+$secondaryBackgroundColor: #f9f9f3
+
+.cheerfulUsersMain
+  display: grid
+  grid-column: 1/-1
+  padding: 120px 0 110px 0
+  background: $secondaryBackgroundColor
+  position: relative
+  h1
+    margin-top: 33px
+    margin-bottom: 0
+.userAnchor
+  position: absolute
+  top: 10px
+.usersSubtitle
+  color: grey
+.userCards
+  margin: 75px 45px 10px 45px
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  grid-gap: 75px
+.usersButton
+  margin: 50px auto
+.userCard
+  width: 200px
+  margin: 0 auto
+.userAvatar
+  width: 70px
+  border-radius: 50%
+  margin-bottom: 0
+.userName
+  margin-top: 20px
+  margin-bottom: 0
+  //word-wrap: break-word to make long names be wraped
+  word-wrap: break-word
+  cursor: pointer
+.userPosition
+  margin-top: 21px
+  margin-bottom: 0
+  cursor: pointer
+.userEmail
+  margin-top: 12px
+  margin-bottom: 0
+  width: 100%
+  position: relative
+.userEmailMain
+  cursor: pointer
+
+//styles for tooltip that is invisible by default but shown when email hovered
+.userEmailTooltip
+  position: absolute
+  left: 50px
+  top: 20px
+  height: 20px
+  display: none
+  background: #333
+  color: #fff
+  font-size: 14px
+  border-radius: 2px
+  padding: 2px 5px
+//makes tooltip shown
+.userEmail:hover .userEmailTooltip
+  display: block
+.userPhone
+  margin-top: 12px
+  cursor: pointer
+
+// media querie for tablet approach
+@media screen and (max-width: 864px)
+  .cheerfulUsersMain
+    padding: 85px 0 70px 0
+  .userCards
+    margin: 75px 25px 60px 25px
+    grid-gap: 30px
+  .usersButton
+    margin-top: 3px
+
+// media querie for mobile approach. Considering fact it has one column flex-layout can be used here
+@media screen and (max-width: 425px)
+  .cheerfulUsersMain
+    display: flex
+    flex-direction: column
+    padding: 45px 0 25px
+    h1
+      margin-bottom: -5px
+  .userCards
+    display: flex
+    flex-direction: column
+    margin-top: 30px
+  .userAvatar
+    width: 65px
+    margin-top: 10px
+  .userName
+    max-width: 200px
+    margin-top: 7px
+  .userPosition
+    margin-top: 5px
+  .userEmailMain
+    margin-top: -10px
+  .userPhone
+    margin-top: 0px
+    margin-bottom: 50px
+  .usersButton
+    margin-top: -25px

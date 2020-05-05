@@ -1,0 +1,82 @@
+$primaryColor: #ef5b4c
+$secondaryColor: #007bff
+
+// position sticky and top 0 needed for header not to scroll
+header
+  grid-column: 1/-1
+  padding: 0 30px
+  z-index: 1
+  position: sticky
+  top: 0
+  background: #fff
+  height: 60px
+  display: flex
+  justify-content: space-between
+  align-items: center
+.ulMenu
+  display: flex
+  grid-column: 5/-1
+  li
+    list-style-type: none
+    margin-left: 29px
+    a
+      color: #000
+      text-decoration: none
+    a:hover
+      color: $primaryColor
+    a:active
+      color: $secondaryColor
+
+//styles for hideable menu needed for tablet and mobile approach display: none makes it invisible while uneeded
+.menuTabletMain
+  display: none
+  position: fixed
+  width: 100vw
+  height: 100vh
+  left: 0
+  top: 0
+  z-index: 2
+  backdrop-filter: brightness(50%)
+.menuTablet
+  display: none
+  position: absolute
+  top: 0
+  left: 0
+  height: 100vh
+  width: 260px
+  z-index: 3
+  background: #fff
+  transition: 2s ease
+  overflow: scroll
+  ul
+    border-top: 1px solid #333
+    margin: 0
+    padding: 20px
+    padding: 14px 0px
+    text-align: left
+  ul > li, a
+    padding: 7px
+    list-style-type: none
+    text-decoration: none
+.menuTabletImg
+  height: 60px
+  display: flex
+  justify-content: center
+// changes menu style to be shown
+.showed
+  display: block
+
+// media querie for tablet and mobile approach
+@media screen and (max-width: 864px)
+  .logo
+    img
+      margin-top: 7px
+
+@media screen and (max-width: 425px)
+  header
+    height: 40px
+    padding: 0px 15px
+  .menuTabletImg
+    height: 40px
+    padding: 0px 15px
+    justify-content: left
